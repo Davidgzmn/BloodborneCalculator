@@ -79,6 +79,10 @@ function populateGoalStats(){
     goalStats[5] = 50;
     displayGoalStats(); 
 }
+function updateCurrentClass(){
+    currentClass = document.querySelector("#classesSelector").value;
+    displayCurrentStats(currentClass);
+}
 
 displayCurrentStats(currentClass);
 populateGoalStats();

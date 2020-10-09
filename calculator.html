@@ -5,6 +5,14 @@
     <body>
         <div class="container">
             <h1 id="className"></h1>
+            <div class="inputColumns labels">
+                <p>Vitality</p>
+                <p>Endurance</p>
+                <p>Strength</p>
+                <p>Skill</p>
+                <p>Blood tinge</p>
+                <p>Arcane</p>
+            </div>
             <div class="inputColumns">
                 <input type="text" id="vit" class="statInputs baseStats" readonly>
                 <input type="text" id="end" class="statInputs baseStats" readonly>
@@ -27,6 +35,11 @@
                 <p>RESULTS HERE</p>
                 <p id="lvlDif"> Level Diference</p>
             </div>
+            <label for="classes">Choose a class:</label>
+            <select id="classesSelector" name="class" oninput="updateCurrentClass()">
+                <option value="Milquetoast">Milquetoast</option>
+                <option value="Lone Survivor">Lone Survivor</option>
+            </select>
         </div>
 
         <script src="script.js"></script>
