@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="className"></h1>
+      <div class="inputColumns labels">
+        <p>Vitality</p>
+        <p>Endurance</p>
+        <p>Strength</p>
+        <p>Skill</p>
+        <p>Blood tinge</p>
+        <p>Arcane</p>
+      </div>
+      <div class="inputColumns">
+        <input type="text" id="vit" class="statInputs baseStats" readonly />
+        <input type="text" id="end" class="statInputs baseStats" readonly />
+        <input type="text" id="str" class="statInputs baseStats" readonly />
+        <input type="text" id="skl" class="statInputs baseStats" readonly />
+        <input type="text" id="btg" class="statInputs baseStats" readonly />
+        <input type="text" id="arc" class="statInputs baseStats" readonly />
+      </div>
+      <div class="inputColumns">
+        <input type="number" id="vitGoal" class="statInputs goalStats" />
+        <input type="number" id="endGoal" class="statInputs goalStats" />
+        <input type="number" id="strGoal" class="statInputs goalStats" />
+        <input type="number" id="sklGoal" class="statInputs goalStats" />
+        <input type="number" id="btgGoal" class="statInputs goalStats" />
+        <input type="number" id="arcGoal" class="statInputs goalStats" />
+      </div>
+      <div id="footer">
+        <button>getResult</button>
+        <button onclick="showLvlDif()">Lvl difference</button>
+        <p>RESULTS HERE</p>
+        <p id="lvlDif">Level Diference</p>
+      </div>
+      <label for="classes">Choose a class:</label>
+      <select id="classesSelector" name="class" oninput="updateCurrentClass()">
+        <option value="Milquetoast">Milquetoast</option>
+        <option value="Lone Survivor">Lone Survivor</option>
+      </select>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
